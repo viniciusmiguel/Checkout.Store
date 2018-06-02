@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>EventStore</Description>
+    <Authors>Vinicius Miguel</Authors>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Checkout.Core.EventStore</AssemblyName>
+    <PackageId>Checkout.Core.EventStore</PackageId>
+    <PackageTags></PackageTags>
+    <PackageProjectUrl>https://github.com/viniciusmiguel/Checkout.Store</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/viniciusmiguel/Checkout.Store/blob/master/LICENSE</PackageLicenseUrl>
+    <Company>Vinicius Miguel</Company>
+    <Product>Checkout.Core.EventStore</Product>
+    <RepositoryUrl>https://github.com/viniciusmiguel/Checkout.Store</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EventStore.ClientAPI.DotNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.5.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="System.ComponentModel" Version="4.3.0" />
+    <PackageReference Include="System.Reactive" Version="4.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Checkout.Store.Shared\Checkout.Core.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

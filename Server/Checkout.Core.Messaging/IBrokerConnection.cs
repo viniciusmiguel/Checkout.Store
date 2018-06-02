@@ -1,0 +1,3 @@
+namespace Checkout.Core.Messaging
+{
+}

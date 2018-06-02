@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Server Host</Description>
+    <Authors>Vinicius Miguel</Authors>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Checkout.Store.Server.Host</AssemblyName>
+    <PackageId>Checkout.Core.Server.Host</PackageId>
+    <PackageTags></PackageTags>
+    <PackageProjectUrl>https://github.com/viniciusmiguel/Checkout.Store</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/viniciusmiguel/Checkout.Store/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/viniciusmiguel/Checkout.Store/blob/master/LICENSE</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog.Sinks.ColoredConsole" Version="3.0.1" />
+    <PackageReference Include="System.Reactive" Version="4.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Checkout.Core.EventStore\Checkout.Core.EventStore.csproj" />
+    <ProjectReference Include="..\Checkout.Core.Messaging\Checkout.Core.Messaging.csproj" />
+    <ProjectReference Include="..\Checkout.Store.Contracts\Checkout.Store.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
